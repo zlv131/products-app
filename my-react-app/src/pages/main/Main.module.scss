@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.container {
+  max-width: 1920px;
+  margin: auto;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+    margin-top: 200px;
+    margin-left: 100px;
+
+    @media (max-width: $breakpoint1600) {
+      margin-left: 80px;
+    }
+
+    @media (max-width: $breakpoint1400) {
+      margin-left: 50px;
+    }
+
+    @media (max-width: $breakpoint1400) {
+      margin-left: 20px;
+    }
+
+    @media (max-width: $breakpoint720) {
+      margin-left: 0px;
+    }
+
+    @media (max-width: $breakpoint576) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+}

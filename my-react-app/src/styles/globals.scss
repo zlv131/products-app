@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Medium.woff2"),
+  url("../assets/fonts/Poppins-Medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-SemiBold.woff2"),
+  url("../assets/fonts/Poppins-SemiBold.woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "AnekTelugu";
+  src: url("../assets/fonts/AnekTelugu-Medium.woff2"),
+  url("../assets/fonts/AnekTelugu-Medium.woff");
+  font-weight: 500;
+}
+
+@import './variables.scss';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+html,
+body {
+  max-width: 100vw;
+  background-color: $color-main;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
