@@ -8,10 +8,11 @@
   grid-row-gap: 0px;
   font-family: Poppins;
   font-size: 64px;
+  margin-left: -20px;
 
   .imgProduct{
     grid-area: 1 / 1 / 3 / 2;
-    padding-right: 136px;
+    padding-right: 116px;
 
     @media (max-width: $breakpoint960) {
       padding-right: 20px;
