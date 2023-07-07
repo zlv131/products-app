@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  font-family: Poppins;
+  font-size: 64px;
+
+  .imgProduct{
+    grid-area: 1 / 1 / 3 / 2;
+    padding-right: 136px;
+
+    @media (max-width: $breakpoint960) {
+      padding-right: 20px;
+    }
+
+    @media (max-width: $breakpoint576) {
+      padding-right: 0px;
+    }
+  }
+
+  .price {
+    grid-area: 2 / 2 / 3 / 3;
+    margin-top: -50px;
+
+    @media (max-width: $breakpoint960) {
+      margin-top: 0px;
+      font-size: 30px;
+    }
+
+    @media (max-width: $breakpoint576) {
+      margin-top: 0px;
+      font-size: 18px;
+    }
+  }
+
+  .name {
+    grid-area: 1 / 2 / 2 / 4;
+    @media (max-width: $breakpoint960) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $breakpoint576) {
+      margin-top: 0px;
+      font-size: 18px;
+    }
+  }
+
+  .buttonFavorite{
+    grid-area: 2 / 3 / 3 / 4;
+    margin-top: -50px;
+    margin-left: 100px;
+  }
+}

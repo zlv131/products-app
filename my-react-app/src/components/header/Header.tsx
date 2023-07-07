@@ -4,9 +4,11 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import React from "react";
 import styles from './Header.module.scss';
-
+import {useNavigate} from "react-router-dom";
  const Header: React.FC = () => {
-    return (
+     const navigate = useNavigate();
+
+     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar className={styles.toolbar}>
@@ -14,7 +16,9 @@ import styles from './Header.module.scss';
                                 variant="h6"
                                 component="div"
                                 sx={{ flexGrow: 1 }}>
-                        PRODUCT PAGE
+                        <div className={styles.buttonTitle} onClick={() => navigate("/")}>
+                            PRODUCT PAGE
+                        </div>
                     </Typography>
                 </Toolbar>
             </AppBar>

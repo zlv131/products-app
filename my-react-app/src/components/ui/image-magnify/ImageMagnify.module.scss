@@ -1,0 +1,24 @@
+@import "../../../styles/variables.scss";
+
+.container {
+
+  @media (max-width: $breakpoint576) {
+    max-width: 220px;
+    max-height: 220px;
+  }
+
+  img {
+    width: 448px;
+    height: 448px;
+
+    @media (max-width: $breakpoint960) {
+      max-width: 350px;
+      max-height: 350px;
+    }
+
+    @media (max-width: $breakpoint576) {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+}

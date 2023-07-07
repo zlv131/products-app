@@ -11,3 +11,7 @@ export const getProducts = () => {
         .then((response) => response.data);
 }
 
+export const getProductInfo = (id: number) => {
+    return api.get(`/image?id=${id}`)
+        .then ((response) => response.data);
+}

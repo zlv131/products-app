@@ -11,7 +11,7 @@ function App() {
         <Header/>
         <Routes>
             <Route path="/" element={<Main/>}/>
-            <Route path="/product" element={<ProductInfo/>}/>
+            <Route path="product/:id" element={<ProductInfo/>}/>
             <Route path="*" element={<NotFound/>}/>
         </Routes>
     </div>

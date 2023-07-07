@@ -1,0 +1,14 @@
+.container {
+  max-width: 1px;
+
+  .imgGlass {
+    margin-left: 224px;
+
+    transition: 0.5s;
+    margin-top: 0px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
